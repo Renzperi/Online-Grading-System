@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;1,100&family=Gabarito&family=Lato:ital,wght@0,100;0,300;1,300&family=Roboto:wght@300&family=Sulphur+Point&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Gabarito', sans-serif;
+}
+/*for Desktops*/
+    body{
+        min-height: 100vh;
+        max-width: 100vw;
+    }
+
+    .NavBar{  
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 10vh;
+        width: 100%;
+        object-fit: cover;
+        background-color: #003249;
+    }
+
+      .NavBar h2 {
+        font-size: 130%;
+        margin-top: 20px;
+        text-align: center;
+     
+        color: #ffffff;
+        text-shadow: 1px 1px 7px #ffffff;
+       
+      }
+
+      header .NavBar ul {
+        position: absolute;
+         right: 0%;
+         top: 0;
+         margin-right: 25px;
+         margin-top: 25px;
+         
+      }
+    
+
+      .NavBar ul li {
+        display: inline-block;
+        text-align: center;
+        width: 140px;
+        height: 30px;
+        margin-left: 5px;
+      }
+
+      .NavBar a {
+        color: #ffffff;
+        text-shadow: 1px 1px 7px #ffffff;
+    
+      }
+      
+      .NavBar .djaphins {
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin-left: 25px;
+        margin-bottom: 10px;
+      
+      }
+
+    footer{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: 10vh;
+        width: 100vw;
+        text-align: center;
+        background-color: #003249;
+    }
+    footer p {
+        margin-top: 20px;
+        color: #ffffff;
+        text-shadow: 1px 1px 10px #ffffff;
+        
+    }
+
+    /* LANDING PAGE RELATED*/
+    .mainInHome{
+        background: url(../assets/images/BG\ background\ darken.jpg);
+        background-size: cover;
+        position: fixed;
+        object-fit: cover;
+        top: 10vh;
+        left: 0;
+        height: 80vh;
+        width:  100%;
+    }
+    
+    
+    .mainInHome h1 {
+        position: relative;
+        top: 70px;
+        right: 1%;
+        font-size: 30px;
+        color: white;
+       
+    }
+     .mainInHome h3 {
+        position: relative;
+        left: 69%;
+        top: 50px;
+        font-size: 90%;
+        color: white;
+     }
+     
+     .mainInHome .title p {
+        position: relative;
+         left: 5px;
+         top: 80px;
+         width: 100%;
+         columns: 200px 1;
+         column-gap: 10px;
+         padding: 20px;
+        color: white; 
+     }
+
+     .mainInHome  li {
+        position: relative;
+        left: 565px;
+        top: 100px;
+        width: 20%;
+        height: 35px;
+        padding: 5px;
+        border-radius: 10px;
+        border: none;
+        list-style: none;
+        text-align: center;
+        color: white;
+        background: #E74646;  
+     }
+
+     .mainInHome a {
+       position: relative;
+       top: 3px;
+       transition: .4s;
+        color: white;
+     }
+
+     .mainInHome a:hover{
+        color: black;
+     }
+
+    .mainInHome  .title{
+        position: absolute;
+        right: 0;
+        bottom: 25px;
+        margin-bottom: 40vh;
+    } 
+     
+    .mainInHome .buttons ul li  {
+        position: relative;
+        left: 20%;
+        top: 430px;
+        width: 23%;
+        height: 50px;
+        margin-left: 15px;
+        border-radius: 10px;
+        font-size: 100%;
+        font-size: large;
+        justify-content: center;
+        text-align: center;
+        display: inline-block;
+         border: none;
+    }
+
+
+    .mainInHome .bxl-facebook-circle{
+        position: relative;
+        right: 10px;
+        top: 2px;
+    }
+    .mainInHome .bxl-youtube {
+        position: relative;
+        right: 10px;
+        top: 2px;
+    }
+    .mainInHome .bxs-map-pin {
+        position: relative;
+        right: 10px;
+        top: 2px;
+    }
+
+    .mainInHome .buttons p {
+        transition: .4s;
+    }
+      
+    .mainInHome .buttons p:hover  {
+      color: black;
+    }
+
+    .mainInHome .fb {
+        background: #4267B2;
+    }
+    .mainInHome .yt {
+        background: #FF0000;
+    }
+    .mainInHome .buttons p  {
+        margin-top: 10px;
+       color: white;
+    }
+    .mainInHome .lcn {
+        background: #008744;
+    }
+
+    /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .NavBar h2 {
+        position: relative;
+        top: 5px;
+     font-size: 15px;
+    
+    }
+
+    .NavBar .djaphins {
+      margin-top: 7%;
+      margin-right: 30%
+    
+    }
+    .mainInHome{
+        width: 100%;
+    }
+
+    header .NavBar ul {
+        left: 230px;
+        font-size: 15px;
+        bottom: 10px;
+    }
+  
+
+    .mainInHome .title p {
+        display: none;
+    }
+
+    .mainInHome .buttons ul li {
+        position: relative;
+         top: 570px;
+        left: 2px;
+        width: 30%;
+    }
+
+    .mainInHome h1 {
+        position: relative;
+        left: 30px;
+    }
+    .mainInHome h3 {
+        position: relative;
+        left: 30px;
+    }
+    .mainInHome li {
+        position: relative;
+        left: 30px;
+        height: 45px;
+        width: 40%;
+    }
+}
+
+

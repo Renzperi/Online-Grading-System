@@ -1,0 +1,12 @@
+Before Opening the Website:
+1. open xampp
+2. start Apache and MySQL
+3. press "admin" next to the "start" button of MySQL in xampp to open phpmyadmin
+4. on the main page of phpmyadmin, press "IMPORT"
+5. import the file called "database.sql" to import the database used for this project.
+
+To access the web site:
+1. open xampp
+2. start Apache and MySQL
+4. move the folder, "OnlineGradingSystem", to C:\xampp\htdocs
+5. open browser and type "localhost/OnlineGrading"

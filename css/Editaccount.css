@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;1,100&family=Gabarito&family=Lato:ital,wght@0,100;0,300;1,300&family=Roboto:wght@300&family=Sulphur+Point&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Gabarito', sans-serif;
+}
+
+@media screen and (min-width:1024px){ /*for Desktops*/
+    body{
+        min-height: 100vh;
+        max-width: 100vw;
+    }
+    .NavBar .log {
+        position: relative;
+        left: 30px;
+        bottom: 20px;
+        transition: .4s;
+        border: none;
+        background: none;
+        color: #ffffff;
+       text-shadow: 1px 1px 7px #ffffff;  
+    }
+
+   
+    .NavBar .menu {
+      position: relative;
+      bottom: 20px;
+      left: 150px;
+      transition: .4s;
+      border: none;
+      background: none;
+      color: #ffffff;
+      text-shadow: 1px 1px 7px #ffffff;
+    }
+
+
+
+
+.RecordEditFormContainer{
+    background: url(../assets/images/logoorigtintwhite.png);
+    display: flex;
+    position: fixed;
+    top: 30vh;
+    height: 60vh;
+    width: 100vw;
+    z-index: 0;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    border: 1px solid black;
+}
+
+
+.RecordEditFormContainer form {
+    position: relative;
+    height: 150px;
+    width: 20%;
+    margin-left: 10px;
+    border-radius: 25px;
+    background-color: #003249;
+}
+
+.RecordEditFormContainer .parameter {
+    position: fixed;
+    margin-left: 80px;
+    margin-top: 30px;
+    font-size: 15px;
+    color: #F3F9FB;
+}
+
+.RecordEditFormContainer .inputval {
+     position: fixed;
+     margin-left: 35px;
+     margin-top: 60px;
+     border-radius: 25px;
+     height: 20px;
+     border: none;
+}
+
+.RecordEditFormContainer .inputval::placeholder{
+    text-align: center;
+}
+
+.RecordEditFormContainer  input{
+    text-align: center;
+}
+
+
+.RecordEditFormContainer .cn {
+   position: fixed;
+   margin-left: 60px;
+   margin-top: 90px;
+   border-radius: 20px;
+   height: 30px;
+   width: 100px;
+   border: none;
+   background-color:#F3F9FB;
+   color: #003249;
+ 
+
+}
+
+
+.individualGradesCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 100vw;
+    position: fixed;
+    top: 10vh;
+    z-index: 0;
+    overflow-x: scroll;
+    border: 1px solid black;
+}
+
+.individualGradesCont table{
+    width: 70%;
+}
+
+.reportCardsContainer{
+    background-image: url(../assets/images/logoorigtintwhite.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 10vh;
+    z-index: 0;
+}
+
+
+.reportCardsContainer .reportCardTableCont table{
+    position: relative;
+    bottom: 20px;
+    width: 50vw;
+    height: 18vw;
+    margin-top: 10px;
+    overflow-y: auto;
+    border-collapse: collapse;
+    border: none;
+    border: 2px solid #003249;
+    border-left: 2px solid #003249;
+    border-color:#003249;
+    background-color: #F3F9FB;
+    color: #06415c;
+}
+
+.reportCardsContainer .reportCardTableCont table td{
+    font-size: 12px;
+}
+
+.reportCardsContainer .reportCardTableCont table th{
+    margin-bottom: 100px;
+    font-size: 14px; 
+    border-bottom:3px solid #06415c ;
+}
+
+
+.reportCardsContainer .view {
+   position: fixed;
+   left: 0;
+   top: 0;
+   margin-top: 100px;
+   margin-left: 40px;
+   
+}
+.reportCardsContainer .gradeselect {
+    height: 40px;
+    width: 80px;
+}
+
+.reportCardsContainer .viewbtn {
+    height: 40px;
+    width: 80px;
+}
+
+}
+

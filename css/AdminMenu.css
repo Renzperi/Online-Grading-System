@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;1,100&family=Gabarito&family=Lato:ital,wght@0,100;0,300;1,300&family=Roboto:wght@300&family=Sulphur+Point&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Gabarito', sans-serif;
+  
+    
+}
+
+ /*for Desktops*/
+  .NavBar .log {
+    position: relative;
+    left: 30px;
+    transition: .4s;
+    border: none;
+    background: none;
+    color: #ffffff;
+    text-shadow: 1px 1px 7px #ffffff;
+  }
+
+
+      .NavBar .archive {
+        position: relative;
+        right: 250px;
+        transition: .4s;
+        border: none;
+        background: none;
+        color: #ffffff;
+        text-shadow: 1px 1px 7px #ffffff;
+      }
+
+
+.AccTableContainer{
+    display: flex;
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    z-index: 0;
+    height: 40vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.AccTableContainer table{
+    width: 70%;
+}
+
+
+.RegFormContainer{
+    display: flex;
+    background: url(../assets/images/logoorigtintwhite.png);
+    position: fixed;
+    top: 50vh;
+    left: 0;
+    z-index: 0;
+    height: 50vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.RegFormContainer form{
+    height: 90%;
+    width: 26%;
+    border-radius: 25px;
+    background-color: #003249;
+    color: #F3F9FB;
+}
+
+.RegFormContainer h2 {
+    text-align: center;
+    margin-top: 20px;
+    color:  #F3F9FB;
+  
+}
+
+.RegFormContainer form input {
+    color: black;
+}
+
+
+
+.RegFormContainer .US,   .RegFormContainer .ID{
+
+position: relative;
+left: 60px;
+margin-top: 25px;
+border-radius: 25px;
+height: 20px;
+bottom: 10px;
+width: 180px;
+font-size: 15px;
+border: none;
+
+}
+
+
+.RegFormContainer .tp,   .RegFormContainer .type{
+position: relative;
+left: 60px;
+bottom: 10px;
+margin-top: 8px;
+border-radius: 25px;
+height: 20px;
+font-size: 15px;
+border: none;
+}
+
+.RegFormContainer .NM,   .RegFormContainer .use{
+
+position: relative;
+left: 60px;
+bottom: 10px;
+margin-top: 8px;
+border-radius: 25px;
+height: 20px;
+width: 160px;
+font-size: 15px;
+border: none;
+}
+
+.RegFormContainer .Ps,   .RegFormContainer .pas{
+
+position: relative;
+left: 60px;
+margin-top: 8px;
+border-radius: 25px;
+height: 20px;
+bottom: 10px;
+width: 150px;
+font-size: 15px;
+border: none;
+}
+
+
+.RegFormContainer .FL,  .RegFormContainer .fl{
+position: relative;
+left: 60px;
+margin-top: 8px;
+border-radius: 25px;
+height: 20px;
+bottom: 10px;
+width: 150px;
+font-size: 15px;
+border: none;
+}
+
+.RegFormContainer .btn {
+position: relative;
+top: 25px;
+right: 20px;
+height: 30px;
+width: 100px;
+font-size: 15px;
+margin-left: 150px;
+margin-top: 10px;
+border-radius: 25px;
+width: 30%;
+transition: .4s;
+border: none;
+color: #003249;
+background-color:  #F3F9FB;
+}
+
+.RegFormContainer .btn:hover {
+background-color: #007EA7;
+color: #F3F9FB;
+}
+
+
+.RegFormContainer .strand {
+position: relative;
+right: 194px;
+bottom: 17px;
+font-size: 15px;
+border: none;
+}
+.RegFormContainer .selectstrand {
+position: relative;
+height: 20px;
+width: 60px;
+bottom: 42px;
+left: 115px;
+border-radius: 25px;
+border: none;
+border: none;
+}
+
+.RegFormContainer ::placeholder {
+text-align: center;
+}
+.RegFormContainer input {
+text-align: center;
+}
+
+
+.AccTableContainer{
+    overflow-y: scroll;
+}
+.AccTableContainer  table {
+    position: relative;
+    top: 50px;
+    margin-top: 10px;
+    overflow-y: scroll;
+    border-collapse: collapse;
+    border: none;
+    border-bottom:2px solid  #003249;
+    border-left: 2px solid #003249;
+    border: 2px solid #003249;
+    border-color:#003249;
+    background-color: #F3F9FB;
+    color: #06415c;
+}
+
+.AccTableContainer table td{
+    font-size: 13px;
+    border-bottom: 1px solid black;
+}
+
+.AccTableContainer  table th{
+    border-bottom:3px solid #06415c ;
+    margin-bottom: 100px;
+    font-size: 14px;
+}
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+  .RegFormContainer form {
+    width: 50%;
+    height: 50%;
+  }
+  .NavBar .archive {
+    position: relative;
+    left: -100%;
+    margin-top: 25%;
+  }
+
+  .RegFormContainer .btn {
+    position: relative;
+    right: 10%;
+   
+  }
+ }
+

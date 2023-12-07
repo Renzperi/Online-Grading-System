@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;1,100&family=Gabarito&family=Lato:ital,wght@0,100;0,300;1,300&family=Roboto:wght@300&family=Sulphur+Point&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Gabarito', sans-serif;
+}
+
+ /*for Desktops*/
+    body{
+        min-height: 100vh;
+        max-width: 100vw;
+    }
+
+      .NavBar .log {
+        position: relative;
+        transition: .4s;
+         border: none;
+         background: none;
+         color: #ffffff;
+         text-shadow: 1px 1px 7px #ffffff;
+      }
+
+
+.sideBar{
+    display: flex;
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    z-index: 1;
+    height: 100vh;
+    width: 20vw;
+    justify-content: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #9AD1D4;
+}
+
+
+
+ .buttonscontainer{
+    position: fixed;
+    right: 0;
+    height: 100%;
+    width: 20%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #9AD1D4;
+ 
+ }
+
+ .buttonscontainer #addRecord,#addColumn,#removeColumn,#deleteColumn, #create{
+    position: relative;
+    top: 35px;
+    left: 6px;
+    margin-top: 40px;
+    transition: .4s;
+    height: 40px;
+    width: 90%;
+    border-radius: 10px;
+    border:none ;
+    font-size: medium;
+    color:#F3F9FB;
+    background-color: #003249;
+    
+ }
+ .buttonscontainer  #addRecord:hover,#addColumn:hover,#removeColumn:hover,#deleteColumn:hover,#create:hover{
+   background-color: #007EA7;
+}
+ 
+
+.sideBar .grade {
+    display: flex;
+    position: relative;
+    right: 2px;
+    margin-top: 10px;
+    height: 50px;
+    width: 275px;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 40px;
+    transition: .4s;
+    border: none;
+    font-size: medium;
+    justify-content: center;
+    text-align: center;
+    color: #F3F9FB;
+    background-color: #003249; 
+ }
+
+
+
+
+.sideBar .grade:hover {
+    background-color: #226597;
+}
+
+
+
+
+
+.dashContainer{
+    
+     background: url(../assets/images/logoorigtintwhite.png);
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    width: 59.3vw;
+    position: fixed;
+    top: 10vh;
+    left: 20vw;
+    z-index: 0;
+    overflow-y: auto;
+    
+}
+
+.dashContainer .rm{
+    position: relative;
+    left: 5px;
+    font-size: 10px;
+    transition: .4s;
+    border: none;
+    background-color: #F3F9FB;
+}
+
+.dashContainer .rm:hover{
+    background-color: #003249;
+    color: #F3F9FB;
+}
+
+
+.dashContainer #gradeBookTableCont{
+    padding: 10px;
+    position: relative;
+    top: 10px;
+
+}
+
+.dashContainer #gradeBookTableCont table{
+    margin-top: 10px;
+    border-collapse: collapse;
+    border: none;
+    object-fit: cover;
+    border-bottom:2px solid  #003249;
+    border-left: 2px solid #003249;
+    border: 2px solid #003249;
+    border-color:#003249;
+    background-color: #F3F9FB;
+    color: #06415c;
+}
+
+.dashContainer #gradeBookTableCont table th{
+    margin-bottom: 100px;
+    font-size: 14px;
+    border-bottom:3px solid #06415c ;
+}
+
+.dashContainer #gradeBookTableCont table td{
+     text-align: center;
+     font-size: 12px;
+}
+
+#gradeBookTableCont .subjtitle {
+    position: relative;
+    left: 30px;
+    margin-bottom: 10px;
+}
+
+
+
+
+ /*GRADEBOOK CREATION MENU RELATED*/
+ .popUpCreate{    /*Eto yung nagpa popup kapag nipi-pindot ang CREATE GRADEBOOK*/
+    position: relative;
+    top: 243px;
+    left: 30%;
+    z-index: 1;
+    height: 200px;
+    width: 40%;
+    background-color: #9AD1D4;
+    border-radius: 10px;
+}
+
+.popUpCreate .subject,.selectsubj {
+    position: relative;
+    left: 30px;
+    top: 20px;
+}
+
+.popUpCreate .grade,.bookname {
+
+    position: relative;
+    left: 120px;
+    top: 40px;
+    margin-bottom: 10px;
+
+    
+}
+
+.popUpCreate #createGB {
+    position: relative;
+    left: 165px;
+    top: 45px;
+    margin-bottom: 10px;
+    width: 50%;
+    height: 40px;
+    border-radius: 20px;
+    font-size: medium;
+    border: none;
+    background-color: #003249;
+    color: #F3F9FB;
+
+    
+}
+.popUpCreate #closeBtn {
+    position: relative;
+    left: 225px;
+    bottom: 80px;
+    width: 50px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: none;
+    color: #ffffff;
+    background-color: #FF0000;
+}
+
+.popUpCreate .strand, .strandselect {
+    position: relative;
+    left: 30px;
+    top: 70px;
+}
+
+.popUpAddColumn, .popUpRemoveColumn{
+    position: relative;
+    left: 35%;
+    top: 250px;
+    height: 30vh;
+    width: 30vw;
+    z-index: 1;
+   
+    border-radius: 10px;
+    background-color:#9AD1D4;
+}
+
+.popUpAddColumn .entergrade{
+    position: relative;
+
+    left: 30px;
+    top: 50px;
+}
+.popUpAddColumn .entermax {
+    position: relative;
+    left: 30px;
+    top: 60px;
+}
+
+.popUpAddColumn .confirm {
+    position: relative;
+    left: 125px;
+    top: 90px;
+    width: 50%;
+    height: 40px;
+    border-radius: 20px;
+    font-size: medium;
+    border: none;
+    background-color: #003249;
+    color: #F3F9FB;
+}
+
+.popUpAddColumn #XBtn4AddColumn {
+    position: relative;
+    left: 170px;
+    bottom: 37px;
+    width: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF0000;
+    color: #ffffff;
+
+}
+.popUpRemoveColumn .deletecolumn{
+position: relative;
+left: 100px;
+top: 50px;
+}
+
+
+
+.popUpRemoveColumn form select {
+min-width: 100px;
+}
+
+
+.popUpRemoveColumn .confirm {
+position: relative;
+left: 130px;
+top: 85px;
+width: 160px;
+height: 40px;
+border-radius: 20px;
+font-size: medium;
+border: none;
+background-color: #003249;
+color: #F3F9FB;
+}
+
+.popUpRemoveColumn #XBtn4RemoveColumn {
+ position: relative;
+    left: 180px;
+    bottom: 15px;
+    width: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF0000;
+    color: #ffffff;
+}
+
+
+.popUpAddRecord{
+    position: fixed;
+    right: 0vw;
+    bottom: 10vh;
+    height: 30vh;
+    width: 30vw;
+    z-index: 1;
+    border: none;
+    margin-right: 480px;
+    margin-bottom: 150px;
+    border-radius: 10px;   
+    border: 1px solid black;
+    background-color:  #9AD1D4;
+}
+.popUpAddRecord .studID, .selectstud{
+    position: relative;
+    top: 55px;
+    left: 50px;
+    
+}
+
+
+
+.popUpAddRecord .addrec{
+    position: relative;
+    left: 130px;
+    top: 90px;
+    width: 50%;
+    height: 40px;
+    border-radius: 20px;
+    font-size: medium;
+    border: none;
+    background-color: #003249;
+    color: #F3F9FB;
+}
+.popUpAddRecord #XBtn4AddRecord {
+    position: relative;
+    left: 190px;
+    bottom: 20px;
+    width: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF0000;
+    color: #ffffff;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .NavBar .log {
+        top: 27px;
+    }
+
+    .dashContainer #gradeBookTableCont table{
+        width: 10%;
+    }
+
+    .popUpCreate{  
+     
+      margin-top: 30%;
+    }
+    
+    .popUpCreate .subject,.selectsubj {
+        width: 40%;
+    }
+    
+    .popUpCreate .grade,.bookname {
+        left: 10%;
+        width: 40%;
+    
+        
+    }
+    
+    .popUpCreate #createGB {
+        margin-left: 25%;
+         left:5% ;
+        width: 40%;
+        
+    }
+    .popUpCreate #closeBtn {
+        left: 10%;
+        top: -50%;
+  
+    }
+    
+    .popUpCreate .strand, .strandselect {
+        left: 10%;
+        width: 40%;
+    }
+    .popUpAddRecord{
+       width: 40%;
+       left: 30%;
+       height: 20%;
+       bottom: 30%;
+    }
+    .popUpAddRecord .studID, .selectstud{
+        left: 10%;
+     bottom: 10%;
+    }
+    
+    
+    .popUpAddRecord .addrec{
+        left: 25%;
+    }
+    .popUpAddRecord #XBtn4AddRecord {
+        left: 10%;
+    }
+
+    .popUpAddColumn{
+      width: 40%;
+      height: 250px;
+      left: 30%;
+       margin-top: 90px;
+   
+    }
+    .popUpRemoveColumn{
+        width: 40%;
+        height: 250px;
+        left: 30%;
+         margin-top: 90px;
+     
+      }
+ 
+    
+    .popUpAddColumn .confirm {
+        left: 20%;
+    }
+    
+    .popUpAddColumn #XBtn4AddColumn {
+       left: 10%;
+       bottom: 30%;
+       left: 20%;
+    
+    }
+    .popUpRemoveColumn .deletecolumn{
+       left: 10%;
+        }
+        .popUpRemoveColumn .confirm {
+         left: 20%;
+        }
+        
+        .popUpRemoveColumn #XBtn4RemoveColumn {
+            left: 4%;
+        }
+        
+}

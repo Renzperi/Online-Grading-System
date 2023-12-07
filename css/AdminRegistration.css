@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;1,100&family=Gabarito&family=Lato:ital,wght@0,100;0,300;1,300&family=Roboto:wght@300&family=Sulphur+Point&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Gabarito', sans-serif;
+}
+
+/*for Desktops*/
+   
+.AccTableContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    width: 100vw;
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    z-index: 0;
+ 
+    border: 1px solid black;
+}
+
+.AccTableContainer table{
+    width: 70%;
+}
+
+
+.AdminFormContainer {
+display: flex;
+background: url(../assets/images/logoorigtintwhite.png);
+position: fixed;
+top: 50vh;
+left: 0;
+height: 50vh;
+width: 50%;
+z-index: 1;
+justify-content: center;
+align-items: center;
+}
+
+
+.AdminFormContainer form{
+height: 90%;
+width: 60%;
+border: 1px solid black;
+border-radius: 25px;
+background-color: #003249;
+background-repeat: repeat;
+
+}
+.AdminFormContainer input {
+  color: black;
+}
+
+.AdminFormContainer label {
+  color: #F3F9FB;
+}
+
+.AdminFormContainer h2 {
+color: #4267B2;
+font-family: 'Gabarito', sans-serif;
+text-align: center;
+margin-top: 16px;
+color: #F3F9FB;
+}
+
+
+.AdminFormContainer .US,.AdminFormContainer .ID{
+display: inline-block;
+position: relative;
+left: 90px;
+margin-top: 25px;
+border-radius: 25px;
+height: 24px;
+
+}
+
+.AdminFormContainer .NM,.AdminFormContainer .use{
+display: inline-block;
+position: relative;
+left: 90px;
+margin-top: 8px;
+border-radius: 25px;
+height: 24px;
+
+}
+
+.AdminFormContainer .Ps,.AdminFormContainer .pas{
+display: inline-block;
+position: relative;
+left: 90px;
+margin-top: 8px;
+border-radius: 25px;
+height: 24px;
+}
+
+.AdminFormContainer .FL, .AdminFormContainer .fl{
+
+display: inline-block;
+position: relative;
+left: 90px;
+margin-top: 8px;
+border-radius: 25px;
+height: 24px;
+}
+
+.AdminFormContainer  .btn {
+margin-left: 140px;
+margin-top: 20px;
+border-radius: 25px;
+width: 30%;
+height: 35px;
+transition: .4s;
+border: none;
+color: #003249;
+background-color:  #F3F9FB;
+}
+
+.AdminFormContainer .btn:hover {
+background-color: #4267B2;
+color: #F3F9FB;
+}
+
+
+
+
+.DeleteAccFormContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 60vw;
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    background: url(../assets/images/logoorigtintwhite.png);
+    background-color: white;
+    background-repeat: repeat;
+    
+}
+
+
+.DeleteAccFormContainer h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    color:  #F3F9FB;
+}
+
+
+
+.DeleteAccFormContainer form{
+    margin-right: 150px;
+    height: 90%;
+    width: 50%;
+    border-radius: 25px;
+    background-color: #003249;
+    color: #F3F9FB;
+    
+}
+
+.DeleteAccFormContainer .id ,.ln{
+    width: 250px;
+    height: 30px;
+    margin-left: 80px;
+    border-radius: 25px;
+    margin-top: 20px;
+    justify-content: right;
+    color:  #F3F9FB;
+    border: none;
+}
+.DeleteAccFormContainer .enter,.FN,.LN {
+    position: relative;
+    top: 10px;
+    margin-left: 80px;
+    color: #F3F9FB;
+}
+.DeleteAccFormContainer .btn {
+     margin-left: 150px;
+     margin-top: 25px;
+     border-radius: 25px;
+     width: 30%;
+     height: 35px;
+     border: none;
+     transition: .4s;
+     color: white;
+     background-color: #F3F9FB;
+     color:  #003249;
+}
+
+.DeleteAccFormContainer .btn:hover {
+    background-color: #4267B2;
+    color: #F3F9FB;
+}
+
+
+
+.DeleteAccFormContainer ::placeholder {
+    text-align: center;
+}
+.DeleteAccFormContainer input {
+    text-align: center;
+}
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+    .AdminFormContainer form {
+        width: 100%;
+        height: 50%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .AdminFormContainer .US,.AdminFormContainer .ID{
+       position: relative;
+       left: 10%;
+        
+        }
+        
+        .AdminFormContainer .NM,.AdminFormContainer .use{
+            left: 10%;
+        
+        }
+        
+        .AdminFormContainer .Ps,.AdminFormContainer .pas{
+            left: 10%;
+        }
+        
+        .AdminFormContainer .FL, .AdminFormContainer .fl{
+            left: 10%;
+    
+        }
+        
+        .AdminFormContainer  .btn {
+            position: relative;
+            right: 10%;
+        }
+
+        .DeleteAccFormContainer form{
+            position: relative;
+            left: 20px;
+            width: 100%;
+            height: 50%;
+
+           
+        }
+        
+.DeleteAccFormContainer .id ,.ln{
+   position: relative;
+   right: 8%;
+}
+.DeleteAccFormContainer .enter,.FN,.LN {
+    position: relative;
+    right: 8%;
+}
+.DeleteAccFormContainer .btn {
+    position: relative;
+    right: 8%;
+}
+        
+      
+ }

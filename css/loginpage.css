@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;1,100&family=Gabarito&family=Lato:ital,wght@0,100;0,300;1,300&family=Roboto:wght@300&family=Sulphur+Point&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Gabarito', sans-serif;
+}
+
+/*for Desktops*/
+   
+    /*ACCOUNTS PAGE RELATED*/
+   
+
+    .LoginFormContainer, .AdminLoginContainer, .bookCreateFormCont{
+        
+        display: flex;
+        background: url(../assets/images/BG\ background\ darken.jpg);
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        width: 100vw;
+        position: fixed;
+        top: 10vh;
+     
+    }
+    
+
+    .AdminLoginContainer h2,  .LoginFormContainer h2 {
+        position: relative;
+        top: 30px;
+        text-align: center;
+        color:  #003249;
+    }
+   
+    .AdminLoginContainer .user,  .LoginFormContainer .user {
+
+        position: relative;
+        top: 35px;
+        width: 80%;
+        height: 40px;
+        margin-left: 38px;
+        border-radius: 25px;
+    }
+    .AdminLoginContainer .name,  .LoginFormContainer .name {
+
+        position: relative;
+        top: 25px;
+        left: 40px;
+    }
+
+    .AdminLoginContainer .pass,  .LoginFormContainer .pass {
+        position: relative;
+        top: 60px;
+        width: 80%;
+        height: 40px;
+        margin-left: 38px;
+        border-radius: 25px;    
+    }
+
+    .AdminLoginContainer .word,  .LoginFormContainer .word {
+        position: relative;
+        top: 50px;
+         width: 80%;
+        left: 40px;
+    }
+    
+    .AdminLoginContainer .btn{
+        position: relative;
+        top: 80px;
+        left: 25%;
+        width: 50%;
+         height: 40px;
+         border-radius: 20px;
+        border: none;
+        color: #ffffff;
+        text-shadow: 1px 1px 7px #ffffff;
+        background-color: #003249;
+        
+      
+    }
+
+    .LoginFormContainer .btn {
+        position: relative;
+        top: 80px;
+        left: 21.5%;
+         width: 50%;
+         height: 40px;
+         border-radius: 20px;
+         border: none;
+        color: #ffffff;
+        text-shadow: 1px 1px 7px #ffffff;
+        background-color: #003249;
+    }
+
+  .LoginFormContainer .showwpasswordbtn{
+      position: relative;
+      left: 80%;
+      top: 22px;
+    }
+    .AdminLoginContainer .showpasswordbtn{
+      position: relative;
+      top: 62px;
+      right: 9%;
+    }
+
+    .LoginFormContainer .change {
+        position: relative;
+        top: 130px;
+       right: 85px;
+       font-size: 100%;
+       object-fit: cover;
+    
+    }
+
+    .AdminLoginContainer input, .LoginFormContainer input {
+        text-align: center;
+    }
+
+    .AdminLoginContainer ::placeholder, .LoginFormContainer ::placeholder {
+        text-align: center;
+    }
+    .LoginFormContainer form, .AdminLoginContainer form{
+        border-radius: 25px;
+        height: 65%;
+        width: 35%;
+        border: none;
+        border: 2px solid black;
+        background-color: white;
+        object-fit: cover ;
+     
+    }
+
+    .AdminLoginContainer .reg{
+        position: relative;
+        top: 130px;
+        right: 30px;
+    }
+
+      /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+      
+    .LoginFormContainer form, .AdminLoginContainer form{
+        width: 70%;
+        height: 40%;
+    }
+}
+
+  
