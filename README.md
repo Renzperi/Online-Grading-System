@@ -35,6 +35,7 @@ III. Technology Used
       -	In order for the system to function and communicate with the database, we used Xampp and PHP. Xampp was used as a tool for          the back-end developer to access the database needed for the project. PHP on the other hand, was used to do SQL Queries in          order to allow the system to achieve its functional requirements.
 
 IV. System
+
     >Landing Page
     ![image](https://github.com/Renzperi/Online-Grading-System/assets/148361196/325d405e-f850-4dcd-835b-bbed31836ec1)
     >Users Login Page
